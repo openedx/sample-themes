@@ -2,7 +2,7 @@
 <%page expression_filter="h"/>
 <%namespace name='static' file='../static_content.html'/>
 <%!
-from itertools import izip_longest
+from six.moves import zip_longest
 from django.utils.translation import ugettext as _
 from django.core.urlresolvers import reverse
 from courseware.courses import get_course_about_section
@@ -337,7 +337,7 @@ from six import text_type
         </div>
         <div class="col col-12"><h2>Instructors</h2></div>
         <% index = 0 %>
-        % for instructors in izip_longest(*([iter(course_details.instructor_info['instructors'])] * 2)):
+        % for instructors in zip_longest(*([iter(course_details.instructor_info['instructors'])] * 2)):
         <div class="row instructors">
           % for instructor in [i for i in instructors if i is not None]:
             <% index += 1 %>
