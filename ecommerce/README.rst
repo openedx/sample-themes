@@ -27,4 +27,4 @@ following directory structure should be followed for each theme.
 
 A more detailed description of how you apply themes to the E-Commerce service and guidelines for theming templates, assets and styles can be found here_.
 
-.. _here: https://github.com/edx/ecommerce/blob/master/docs/theming.rst
+.. _here: https://github.com/openedx/ecommerce/blob/master/docs/theming.rst
